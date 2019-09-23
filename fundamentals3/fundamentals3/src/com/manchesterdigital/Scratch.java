@@ -14,5 +14,22 @@ public class Scratch {
         // object creation statement:
         // Creating an instance of the Car class
         Car ferrari = new Car();
+
+        boolean isMorning = true;
+
+        // can do this but not best practise
+        if (isMorning)
+            System.out.println("It's morning");
+
+        if (isMorning) {
+            System.out.println("It's morning");
+            putTheKettleOn();
+        }
+
+    } // end main
+
+    private static void putTheKettleOn() {
+        System.out.println("Putting the kettle on...");
     }
+
 }
