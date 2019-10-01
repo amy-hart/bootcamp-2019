@@ -1,6 +1,8 @@
 package com.manchesterdigital;
 
-public class InvalidConversionUnitException extends Throwable {
-    public InvalidConversionUnitException(String s) {
+// Writing our own exception class which extends the default RuntimeException class
+public class InvalidConversionUnitException extends RuntimeException {
+    public InvalidConversionUnitException(String message) {
+        super(message);
     }
 }
